@@ -5,7 +5,7 @@ int main() {
 int populacao; 
 float area;
 float PIB;
-int pontosturisticos;
+int numerodospontosturisticos;
 char estado;
 char cidade;
 char codigo;
@@ -28,8 +28,8 @@ char codigo;
     printf("Digite o valor do PIB: \n");
     scanf(" %e", &PIB);
 
-    printf("Digite os pontosturisticos: \n");
-    scanf(" %d", &pontosturisticos);
+    printf("Digite o numerodospontosturisticos: \n");
+    scanf(" %d", &numerodospontosturisticos);
 
     return 0;
 }
