@@ -2,8 +2,8 @@
 
 int main() {
 
-int populacao; 
-float area, numerodospontosturisticos;
+int populacao, numerodospontosturisticos; 
+float area;
 float PIB;
 char estado;
 char cidade;
