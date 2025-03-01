@@ -3,9 +3,8 @@
 int main() {
 
 int populacao; 
-float area;
+float area, numerodospontosturisticos;
 float PIB;
-int numerodospontosturisticos;
 char estado;
 char cidade;
 char codigo;
