@@ -20,23 +20,23 @@ char codigo;
 printf("Carta 1, digite seu estado: \n");
 scanf("%s", &estado);
 
- printf("Carta 1, digite o nome da sua cidade: \n");
- scanf(" %s", &cidade);
+printf("Carta 1, digite o nome da sua cidade: \n");
+scanf(" %s", &cidade);
 
- printf("Carta 1, digite o codigo da carta: \n");
- scanf("%s", &codigo);
+printf("Carta 1, digite o codigo da carta: \n");
+scanf("%s", &codigo);
 
- printf("Carta 1, digite o numero  da populacao: \n");
- scanf("%ld", &populacao);
+printf("Carta 1, digite o numero  da populacao: \n");
+scanf("%ld", &populacao);
 
- printf("Carta 1, digite o tamanho da area: \n");
- scanf(" %e", &area);
+printf("Carta 1, digite o tamanho da area: \n");
+scanf(" %e", &area);
 
- printf("Carta 1, digite o valor do PIB: \n");
- scanf(" %e", &PIB);
+printf("Carta 1, digite o valor do PIB: \n");
+scanf(" %e", &PIB);
 
- printf("Carta 1, digite o numero dos pontos turisticos: \n");
- scanf(" %d", &numerodospontosturisticos);
+printf("Carta 1, digite o numero dos pontos turisticos: \n");
+scanf(" %d", &numerodospontosturisticos);
 
 media = (populacao / area);
 
@@ -48,7 +48,7 @@ printf("O PIB per capita da carta 1 é: %.2f\n", media);
 
 media = (densidadepopulacional * PIBpercapita);
 
- printf("O cálculo da Densidade Populacional e o PIB per capita da carta 1 é: %.2f\n", multiplicacao);
+printf("O cálculo da Densidade Populacional e o PIB per capita da carta 1 é: %.2f\n", multiplicacao);
 
 media = (populacao + area + PIB + numerodospontosturisticos + PIBpercapita + densidadepopulacional); 
 
@@ -57,35 +57,35 @@ printf("O Super Poder da carta 1 é: %.2f\n", media);
 printf("Carta 2, digite seu estado: \n");
 scanf("%s", &estado);
 
- printf("Carta 2, digite o nome da sua cidade: \n");
- scanf(" %s", &cidade);
+printf("Carta 2, digite o nome da sua cidade: \n");
+scanf(" %s", &cidade);
 
- printf("Carta 2, digite o codigo da carta: \n");
- scanf("%s", &codigo);
+printf("Carta 2, digite o codigo da carta: \n");
+scanf("%s", &codigo);
 
- printf("Carta 2, digite o numero  da populacao: \n");
- scanf("%ld", &populacao);
+printf("Carta 2, digite o numero  da populacao: \n");
+scanf("%ld", &populacao);
 
- printf("Carta 2, digite o tamanho da area: \n");
- scanf(" %e", &area);
+printf("Carta 2, digite o tamanho da area: \n");
+scanf(" %e", &area);
 
- printf("Carta 2, digite o valor do PIB: \n");
- scanf(" %e", &PIB);
+printf("Carta 2, digite o valor do PIB: \n");
+scanf(" %e", &PIB);
 
- printf("Carta 2, digite o numero dos pontos turisticos: \n");
- scanf(" %d", &numerodospontosturisticos);
+printf("Carta 2, digite o numero dos pontos turisticos: \n");
+scanf(" %d", &numerodospontosturisticos);
 
- media = (populacao / area);
+media = (populacao / area);
 
- printf("A densidade populacional da carta 2 é: %.2f\n", media);
+printf("A densidade populacional da carta 2 é: %.2f\n", media);
 
- media = (PIB / populacao);
+media = (PIB / populacao);
 
- printf("O PIB per capita da carta 2 é: %.2f\n", media);
+printf("O PIB per capita da carta 2 é: %.2f\n", media);
 
- media = (densidadepopulacional * PIBpercapita);
+media = (densidadepopulacional * PIBpercapita);
 
- printf("O cálculo da Densidade Populacional e o PIB per capita da carta 2 é: %.2f\n", media);
+printf("O cálculo da Densidade Populacional e o PIB per capita da carta 2 é: %.2f\n", media);
 
 media = (populacao + area + PIB + numerodospontosturisticos + PIBpercapita + densidadepopulacional); 
 
@@ -101,4 +101,4 @@ printf("Vencedor: carta1 > carta2: %d\n", carta1 > carta2);
 
 return 0;
 
- }
+}
