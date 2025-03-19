@@ -1,11 +1,12 @@
 #include <stdio.h>
 
-int main() {
+int main(){
 
 //Declaração de variáveis e a quantidade da população de ambas as cartas
 int populacao1 = 2550000, populacao2 = 2450000;
 int soma, subtracao, multiplicacao, divisao;
 int numerodospontosturisticos1, numerodospontosturisticos2;
+int opcao;
 float densidadepopulacional1, densidadepopulacional2;
 float area1, area2;
 float PIB1, PIB2;
@@ -78,13 +79,49 @@ media2 = (PIB2 / populacao2);
 
 printf("O PIB per capita da carta 2 é: %.2f\n", media2);
 
-//Aqui está sendo feito a comparação de um atributo das cartas
+//Aqui vocês vai escolher uma opção para fazer a comparação
+printf("### Escolha qual atributo comparar ###\n");
+printf("1. População \n");
+printf("2. Área\n");
+printf("3. PIB\n");
+printf("4. Número dos pontos turisticos \n");
+printf("5. Sair \n");
+printf("Escolha uma opção: \n");
+scanf("%d", &opcao);
+
+switch (opcao) {
+case 1:
+printf("População \n");
+break;
+case 2:
+printf("Área \n");
+break;
+case 3:
+printf("PIB \n");
+break;
+case 4:
+printf("Número dos pontos turisticos \n");
+break;
+case 5:
+printf("Sair \n");
+break;
+default:
+printf("Opção inválida. Tente novamente.\n");
+}
+
+//Aqui está sendo feito a entrada do atributo escolhido, e a comparação entre eles
+printf ("Carta1 digite o número do atributo escolhido: ");
+scanf("%f", &populacao1);
+printf ("Carta2 digite o número do atributo escolhido: ");
+scanf("%f", &populacao2);
+
 if (populacao1 > populacao2) {
-printf ("A populacao da carta1 é maior!\n");
-} else if (populacao1 < populacao2) {
-printf ("A populacao da carta2 é maior!\n");
+if (populacao1 < populacao2) {
+printf ("Parabéns, você venceu! A população da carta1 é maior!\n");
+} else {
+printf ("Parabéns, você venceu! A população da carta2 é maior!\n");
 }
 
 return 0;
 
-}
+}}
