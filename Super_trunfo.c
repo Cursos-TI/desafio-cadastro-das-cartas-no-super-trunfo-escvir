@@ -97,14 +97,14 @@ media = (populacao + area + PIB + numerodospontosturisticos + PIBpercapita + den
 printf("O Super Poder da carta 2 é: %.2f\n", media);
 
 //Aqui está sendo feito as Comparações
-printf("populacao: carta1 > carta2: %ld\n", carta1 > carta2);
-printf("area: carta1 > carta2: %.1f\n", carta1 > carta2);
-printf("PIB: carta1 > carta2: %.1f\n", carta1 > carta2);
-printf("numerodospontosturisticos: carta1 > carta2: %.1f\n", carta1 > carta2);
-printf("densidadepopulacional: carta1 > carta2: %.1f\n", carta1 > carta2); 
-printf("PIBpercapita: carta1 > carta2: %.1f\n", carta1 > carta2);
-printf("SuperPoder: carta1 > carta2: %.1f\n", carta1 > carta2);
-printf("Vencedor: carta1 > carta2: %d\n", carta1 > carta2);
+printf("populacao: carta1 > carta2: %d\n", carta1 > carta2);
+printf("area: carta1 > carta2: %d\n", carta1 < carta2);
+printf("PIB: carta1 > carta2: %d\n", carta1 > carta2);
+printf("numerodospontosturisticos: carta1 > carta2: %d\n", carta1 < carta2);
+printf("densidadepopulacional: carta1 > carta2: %d\n", carta1 > carta2); 
+printf("PIBpercapita: carta1 > carta2: %d\n", carta1 < carta2);
+printf("SuperPoder: carta1 > carta2: %d\n", carta1 > carta2);
+printf("Vencedor: carta1 > carta2: %d\n", carta1 < carta2);
 
 return 0;
 
