@@ -3,7 +3,7 @@
 int main(){
 
 //Declaração de variáveis e a quantidade da população de ambas as cartas
-int populacao1 = 2550000, populacao2 = 2450000;
+int populacao1, populacao2;
 int soma, subtracao, multiplicacao, divisao;
 int numerodospontosturisticos1, numerodospontosturisticos2;
 int opcao;
@@ -111,17 +111,16 @@ printf("Opção inválida. Tente novamente.\n");
 
 //Aqui está sendo feito a entrada do atributo escolhido, e a comparação entre eles
 printf ("Carta1 digite o número do atributo escolhido: ");
-scanf("%f", &populacao1);
+scanf("%d", &populacao1);
 printf ("Carta2 digite o número do atributo escolhido: ");
-scanf("%f", &populacao2);
+scanf("%d", &populacao2);
 
 if (populacao1 > populacao2) {
-if (populacao1 < populacao2) {
-printf ("Parabéns, você venceu! A população da carta1 é maior!\n");
-} else {
-printf ("Parabéns, você venceu! A população da carta2 é maior!\n");
+printf ("Parabéns, você venceul A população da carta1 é maior!\n");
+} else if (populacao1 < populacao2) {
+printf ("Parabéns, você venceul A população da carta2 é maior!\n");
 }
 
 return 0;
 
-}}
+}
