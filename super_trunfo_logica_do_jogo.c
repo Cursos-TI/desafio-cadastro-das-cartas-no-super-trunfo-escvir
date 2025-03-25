@@ -160,6 +160,7 @@ default:
 printf("Opção de jogo inválida.\n");
 }
 
+ //Aqui está sendo feito a comparação da soma dos atributos escolhidos
 if (populacao1 + PIB1 >  populacao2 + PIB2) {
 printf ("Parabéns, você venceu! A população e o PIB da carta1 somados, é maior!\n");
 } else if (populacao1 + PIB1 <  populacao2 + PIB2) {
