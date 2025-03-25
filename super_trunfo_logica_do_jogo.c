@@ -82,9 +82,9 @@ media2 = (PIB2 / populacao2);
 printf("O PIB per capita da carta 2 é: %.2f\n", media2);
 
 //Aqui você vai escolher duas opções para fazer a comparação
-printf("### Escolha quais atributos comparar ###\n");
 // Início do jogo
 printf("Bem-vindo ao jogo!\n");
+printf("### Escolha quais atributos comparar ###\n");
 printf("Escolha o primeiro atributo.\n");
 printf("A. População.\n");
 printf("B. Número dos Pontos Turísticos.\n");
