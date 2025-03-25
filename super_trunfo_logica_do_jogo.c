@@ -2,10 +2,11 @@
 
 int main(){
 
-//Declaração de variáveis e a quantidade da população de ambas as cartas
+//Declaração de variáveis
 int populacao1, populacao2;
 int soma, subtracao, multiplicacao, divisao;
 int numerodospontosturisticos1, numerodospontosturisticos2;
+int resultado1, resultado2;
 int opcao;
 float densidadepopulacional1, densidadepopulacional2;
 float area1, area2;
@@ -16,6 +17,7 @@ char carta1, carta2;
 char estado1, estado2;
 char cidade1, cidade2;
 char codigo1, codigo2;
+char primeiroAtributo, segundoAtributo;
 
 //Aqui está sendo feito o cadastro da carta1
 printf("Carta 1, digite seu estado: \n");
@@ -79,46 +81,91 @@ media2 = (PIB2 / populacao2);
 
 printf("O PIB per capita da carta 2 é: %.2f\n", media2);
 
-//Aqui vocês vai escolher uma opção para fazer a comparação
-printf("### Escolha qual atributo comparar ###\n");
-printf("1. População \n");
-printf("2. Área\n");
-printf("3. PIB\n");
-printf("4. Número dos pontos turisticos \n");
-printf("5. Sair \n");
-printf("Escolha uma opção: \n");
-scanf("%d", &opcao);
+//Aqui você vai escolher duas opções para fazer a comparação
+printf("### Escolha quais atributos comparar ###\n");
+// Início do jogo
+printf("Bem-vindo ao jogo!\n");
+printf("Escolha o primeiro atributo.\n");
+printf("A. População.\n");
+printf("B. Número dos Pontos Turísticos.\n");
+printf("C. Área.\n");
+printf("D. PIB.\n");
 
-switch (opcao) {
-case 1:
-printf("População \n");
+printf("Escolha a comparação: ");
+scanf(" %c", &primeiroAtributo);
+
+switch (primeiroAtributo)
+{
+case 'A':
+case 'a':
+printf("Você escolheu a opção População!\n");
+resultado1 = populacao1 > populacao2 ? 1 : 0;
 break;
-case 2:
-printf("Área \n");
+
+case 'B':
+case 'b':
+printf("Você escolheu a opção Número dos Pontos Turísticos!\n");
+resultado1 = numerodospontosturisticos1 > numerodospontosturisticos2 ? 1 : 0;
 break;
-case 3:
-printf("PIB \n");
+case 'C':
+case 'c':
+printf("Você escolheu a opção Área!\n");
+resultado1 = area1 > area2 ? 1 : 0;
 break;
-case 4:
-printf("Número dos pontos turisticos \n");
-break;
-case 5:
-printf("Sair \n");
+case 'D':
+case 'd':
+printf("Você escolheu a opção PIB!\n");
+resultado1 = PIB1 > PIB2 ? 1 : 0;
 break;
 default:
-printf("Opção inválida. Tente novamente.\n");
+printf("Opção de jogo inválida.\n");
+break;
 }
 
-//Aqui está sendo feito a entrada do atributo escolhido, e a comparação entre eles
-printf ("Carta1 digite o número do atributo escolhido: ");
-scanf("%d", &populacao1);
-printf ("Carta2 digite o número do atributo escolhido: ");
-scanf("%d", &populacao2);
+//Escolha o segundo atributo
+printf("Escolha o segundo atributo.!\n");
+printf("Atenção: Você deve escolher um atributo diferente do primeiro.\n");
+printf("A. População.\n");
+printf("B. Número dos Pontos Turísticos.\n");
+printf("C. Área.\n");
+printf("D. PIB.\n");
 
-if (populacao1 > populacao2) {
-printf ("Parabéns, você venceul A população da carta1 é maior!\n");
-} else if (populacao1 < populacao2) {
-printf ("Parabéns, você venceul A população da carta2 é maior!\n");
+printf("Escolha a comparação: ");
+scanf(" %c", &segundoAtributo);
+
+switch (segundoAtributo)
+{
+case 'A':
+case 'a':
+printf("Você escolheu a opção População!\n");
+resultado1 = populacao1 > populacao2 ? 1 : 0;
+break;
+
+case 'B':
+case 'b':
+printf("Você escolheu a opção Número dos Pontos Turísticos!\n");
+resultado1 = numerodospontosturisticos1 > numerodospontosturisticos2 ? 1 : 0;
+break;
+case 'C':
+case 'c':
+printf("Você escolheu a opção Área!\n");
+resultado1 = area1 > area2 ? 1 : 0;
+break;
+case 'D':
+case 'd':
+printf("Você escolheu a opção PIB!\n");
+resultado1 = PIB1 > PIB2 ? 1 : 0;
+break;
+default:
+printf("Opção de jogo inválida.\n");
+}
+
+if (populacao1 + PIB1 >  populacao2 + PIB2) {
+printf ("Parabéns, você venceu! A população e o PIB da carta1 somados, é maior!\n");
+} else if (populacao1 + PIB1 <  populacao2 + PIB2) {
+printf ("Parabéns, você venceu! A população e o PIB da carta2 somados, é maior!\n");
+} else if (populacao1 + PIB1 == populacao2 + PIB2){
+printf ("Vocês Empataram!\n");
 }
 
 return 0;
